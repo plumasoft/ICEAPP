@@ -1,0 +1,122 @@
+/* -----------------------------------------------------------------------------
+// 3. Journal Page
+// ----------------------------------------------------------------------------- */
+
+//
+// Table of content
+// -----------------------------------------------------------------------------
+// - Section Headline
+// - Section 1 - Hero Slider
+// - Section 2 - Posts
+
+
+//
+// Journal Page
+// --------------------------------------------------
+.journal {
+
+// Section Headline
+// --------------------------------------------------
+    .section-headline {
+        margin-bottom: 20px;
+        text-align: center;
+
+        h4 {
+            display: inline-block;
+            margin: 0 0 40px 0;
+            color: $brand-color;
+            font-size: 40px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #4b4b4b;
+            font-family: $links-font-family;
+            letter-spacing: 2px;
+        }
+    }
+
+
+// Section 1 - Hero Title
+// --------------------------------------------------
+    .hero-title {
+        background-image: url(http://placehold.it/1895x500);
+    }
+
+
+// Section 2 - Posts
+// --------------------------------------------------
+    .post {
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: $light-bg-color;
+        margin-bottom: 30px;
+
+        // post date
+        .date {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: $heading-text-color;
+            font-family: $links-font-family;
+            color: #4b4b4b;
+            letter-spacing: 1px;
+        }
+
+        // post title
+        h2 {
+            font-size: 20px;
+            margin: 5px 0 20px 0;
+
+            a {
+                color: $brand-color;
+            }
+        }
+
+        // post text content
+        p {
+            color: #9c9c9c;
+        }
+
+        // aligning the content of the post
+        .align {
+            padding: 30px 40px;
+        }
+
+         // share, like & comment buttons
+        .meta {
+            margin-top: 40px;
+            padding: 15px 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            @include clearfix();
+
+            a {
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #c4c4c4;
+
+                i {
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    color: $heading-text-color;
+                    text-decoration: none;
+
+                    i {
+                        color: $brand-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .load-more:hover {
+        background-color: $brand-color;
+        color: #fff;
+        border-color: $brand-color;
+    }
+}

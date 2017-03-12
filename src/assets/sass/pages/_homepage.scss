@@ -1,0 +1,229 @@
+/* -----------------------------------------------------------------------------
+// 1. Homepage
+// ----------------------------------------------------------------------------- */
+
+//
+// Table of content
+// -----------------------------------------------------------------------------
+// - Section Headline
+// - Section 1 - Hero Splash
+// - Section 2 - Cupcakes 
+// - Section 4 - Counters
+// - Section 5 - About Us
+
+
+//
+// homepage
+// --------------------------------------------------
+.homepage {
+
+// Section Headline
+// --------------------------------------------------
+    .section-headline {
+        margin-bottom: 20px;
+        text-align: center;
+
+        h4 {
+            display: inline-block;
+            margin: 0 0 40px 0;
+            color: $brand-color;
+            font-size: 40px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #4b4b4b;
+            font-family: $links-font-family;
+            letter-spacing: 2px;
+        }
+    }
+
+
+// Section 1 - Hero Splash
+// --------------------------------------------------
+    .hero-splash {
+        position: relative;
+        height: 750px;
+        text-align: center;
+        overflow: hidden;
+        font-family: $headings-font-family;
+        background: url(http://placehold.it/1895x1000) center center no-repeat;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+            -ms-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+
+
+        .splash-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+
+            img {
+                min-height: 100%;
+            }
+
+            @media (max-width:1350px) {
+                img {
+                    max-width: initial;
+                }
+            }
+
+            // pagination circles
+            .owl-pagination {
+                position: absolute;
+                bottom: 90px;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                text-align: center;
+
+                .owl-page {
+                    display: inline-block;
+
+                    span {
+                        display: block;
+                        width: 12px;
+                        height: 12px;
+                        margin: 5px 7px;
+                        filter: Alpha(Opacity=100);
+                        opacity: 1;
+                        border: 1px solid #fff;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        border-radius: 20px;
+                        background: transparent;
+                    }
+
+                    &.active span {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+
+        // positioning it in the center
+        .align {
+            position: absolute;
+            top: 40%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+
+            -webkit-transform: translateY(-50%);
+               -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                 -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
+        }
+
+        h1 {
+            padding: 0 0 15px 0;
+            color: $brand-color;
+            font-size: 48px;
+            font-weight: 700;
+
+            small {
+                display: block;
+                font-family: $links-font-family;
+                margin: 25px 0 0 0;
+                text-transform: uppercase;
+                color: #4b4b4b;
+                font-weight: 700;
+                letter-spacing: 2px;
+                font-size: 16px;
+            }
+        }
+
+        .btn-light {
+            margin-left: 10px;
+            color: $brand-color;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        @media (max-width:768px){
+            h1 {
+                font-size: 36px;
+            }
+        }
+    }
+
+
+// Section 2 - Cupcakes 
+// --------------------------------------------------
+    .cupcakes-section {
+        .item {
+            text-align: center;
+
+            img {
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                margin-bottom: 20px;
+                font-size: 16px;
+                color: #4b4b4b;
+                text-transform: uppercase;
+                font-family: $links-font-family;
+            }
+
+            p {
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width:992px){
+            .item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+// Section 4 - Counters
+// --------------------------------------------------
+    .counters {
+        padding: 150px 0;
+        background: url(http://placehold.it/1895x700) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+
+// Section 5 - About Us
+// --------------------------------------------------
+    .aboutus {
+        img {
+            border-radius: 5px;
+        }
+
+        h3 {
+            font-family: $links-font-family;
+            margin: 30px 0 40px 0;
+
+            & + p {
+                margin-bottom: 20px;
+            }
+        }
+
+        .list {
+            margin-left: 10px;
+        }
+
+        @media (max-width:992px){
+            .list {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

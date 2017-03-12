@@ -1,0 +1,125 @@
+/* -----------------------------------------------------------------------------
+// 2. Footer 
+// ----------------------------------------------------------------------------- */
+
+// Table of content
+// -----------------------------------------------------------------------------
+// - General Footer Styles
+
+
+// General Footer Styles
+// --------------------------------------------------
+footer {
+    position: relative;
+	background: url(http://placehold.it/1600x700) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color: #fff;
+
+    // color overlay
+    &:after {
+        content: ' ';
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color :rgba(17, 184, 215, .85);
+    }
+
+    // headline 
+    .section-headline {
+        h4,
+        p {
+            color: #fff !important;
+        }
+    }
+
+    // footer main
+    .footer-main {
+        position: relative;
+        padding: 100px 0 0 0;
+        z-index: 2;
+
+        .col {
+            text-align: center;
+            text-transform: uppercase;
+
+            p {
+                margin-bottom: 5px;
+            }
+        }
+
+        p {
+            font-family: $links-font-family;
+            letter-spacing: 2px;
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            margin: 0 auto 30px auto;
+            background-color: $brand-color;
+            color: #fff;
+            border-radius: 100%;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        @media (max-width:992px) {
+            .col {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+    // footer social
+    .footer-social {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+        background-color: #fff; // fallback
+        background-color: rgba(255, 255, 255, .1);
+
+        ul {
+            padding: 0;
+            margin-bottom: 0;
+
+            li {
+                display: inline;
+            }
+
+            a {
+                margin: 0 20px;
+                font-size: 24px;
+                color: #fff;
+                opacity: .2;
+                @include transition(opacity, .3s);
+
+                &:hover {
+                    opacity: 1;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        position: relative;
+        z-index: 2;
+        letter-spacing: 2px;
+        padding: 25px 0;
+        text-align: center;
+        font-family: $links-font-family;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}

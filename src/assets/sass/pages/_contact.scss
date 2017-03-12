@@ -1,0 +1,121 @@
+/* -----------------------------------------------------------------------------
+// 7. Contact Page
+// ----------------------------------------------------------------------------- */
+
+//
+// Table of content
+// -----------------------------------------------------------------------------
+// - Section Headline
+// - Section 1 - Contact Map
+// - Section 2 - Contact 
+
+
+//
+// Contact Page
+// --------------------------------------------------
+.contact-page {
+
+// Section Headline
+// --------------------------------------------------
+    .section-headline {
+        margin-bottom: 20px;
+        text-align: center;
+
+        h4 {
+            display: inline-block;
+            margin: 0 0 40px 0;
+            color: $brand-color;
+            font-size: 40px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #4b4b4b;
+            font-family: $links-font-family;
+            letter-spacing: 2px;
+        }
+    }
+
+
+// Section 1 - Contact Map
+// --------------------------------------------------
+    .hero-title {
+        background-image: url(http://placehold.it/1895x500);
+    }
+
+// Section 2 - Contact 
+// --------------------------------------------------
+    .contact {
+        text-align: center;
+
+        h2 {
+            color: $brand-color;
+            margin-bottom: 30px;
+
+            & + p {
+                margin-bottom: 50px;
+            }
+        }
+
+        .form-control {
+            background-color: $light-bg-color;
+            border-radius: 5px;
+        }
+
+        .contact-description {
+            margin-top: 100px;
+        }
+
+        .info-box {
+            padding: 40px 50px;
+            background-color: #f8f2ed;
+            border-radius: 5px;
+            @include clearfix();
+
+            .align {
+                text-align: left;
+                float: left;
+                width: 70%;
+                margin-right: 20px;
+            }
+
+            h4 {
+                margin-bottom: 30px;
+            }
+
+            .icon {
+                float: right;
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                color: #fff;
+                line-height: 100px;
+                font-size: 30px;
+                margin-top: 30px;
+                background-color: $brand-color;
+            }
+        }
+
+        @media (max-width:992px){
+            .info-box {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
